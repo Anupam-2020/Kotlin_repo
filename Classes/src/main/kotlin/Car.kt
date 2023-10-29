@@ -7,8 +7,8 @@ class Car(name: String, model: String, var color: String, var door: Int) {
         if(name.lowercase().startsWith('a')) {
             lastName = name
         } else {
-            lastName = "User"
-            println("User doesn't start with A or a")
+            lastName = "Car"
+            println("Car doesn't start with A or a")
         }
     }
 
