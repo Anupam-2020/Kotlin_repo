@@ -16,7 +16,6 @@ fun main() {
 //    // getters and setters for Person Class
 //    user1.name = "${user1.firstName} ${user1.lastName}" // setter will be called here
 //    println(user1.name) // getter will be called here
-//
 //    user1.address = "Patna"
 //    println(user1.address)
 
@@ -27,9 +26,26 @@ fun main() {
 //    val instance = Database
 //    println(instance)
 
-    val emp1 = Employee("1234", 4, "Associate")
-    val emp2 by lazy { // when we create object by lazy, object gets instantiated only when it used
-        Employee("1643", 1, "Associate")
+//    val emp1 = Employee("1234", 4, "Associate")
+//    val emp2 by lazy { // when we create object by lazy, object gets instantiated only when it used
+//        Employee("1643", 1, "Associate")
+//    }
+//    println(emp2.empId)
+
+
+    println(Direction.NORTH.direction)
+    println(Direction.NORTH.getDirection())
+
+    for(direction in Direction.entries) {
+        println(direction.name)
     }
-    println(emp2.empId)
+
+    val direction = Direction.valueOf("west".uppercase())
+
+    when(direction) {
+        Direction.WEST -> Direction.WEST.getDirection()
+        Direction.NORTH -> Direction.NORTH.getDirection()
+        Direction.EAST -> Direction.EAST.getDirection()
+        Direction.SOUTH -> direction.getDirection()
+    }
 }
