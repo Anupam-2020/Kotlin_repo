@@ -12,4 +12,11 @@ fun main() {
     val user2 = Person("Anupam")
     println(user2.lastName)
     val user3 = Person("Anand", 28)
+
+    // getters and setters for Person Class
+    user1.name = "${user1.firstName} ${user1.lastName}" // setter will be called here
+    println(user1.name) // getter will be called here
+
+    user1.address = "Patna"
+    println(user1.address)
 }
