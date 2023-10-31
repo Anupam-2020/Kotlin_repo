@@ -1,3 +1,9 @@
+import interfaces.ButtonClass
+import interfaces.Car
+import interfaces.ClickListener
+import interfaces.Plane
+import interfaces.User
+
 fun main(args: Array<String>) {
     // Inheritance...........................................
 //    val car = Car("BMW", "BLUE", 4, 3, "2")
@@ -34,6 +40,28 @@ fun main(args: Array<String>) {
 //    println(user2 == user1) // true
 //    println(user2 === user1) // false
 //    println(user2)
-    
+
     // Interfaces
+//    val car = Plane("Tata", "Black")
+//    car.startEngine()
+
+    // Object Expression.....................................
+//    val button = ButtonClass("Sign In", 1234, object : ClickListener {
+//        override fun click() {
+//            println("Sign In Clicked")
+//        }
+//    })
+//    button.click()
+
+    // delegation on properties.....................................
+//    val user = User()
+//    with(user) {
+//        this.firstName = "Anupam"
+//        this.lastName = "Anand"
+//    }
+//
+//    with(user) {
+//        println(firstName)
+//        println(lastName)
+//    }
 }
