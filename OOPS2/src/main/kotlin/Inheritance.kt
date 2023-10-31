@@ -1,5 +1,4 @@
 open class Vehicle(val name: String, val color: String, door: String) {
-
     open fun move() {
         println("$name is moving")
     }
