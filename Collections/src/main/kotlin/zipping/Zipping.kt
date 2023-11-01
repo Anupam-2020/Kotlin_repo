@@ -1,4 +1,3 @@
-package zipping
 
 fun main() {
     val colors = listOf("red", "brown", "grey")
