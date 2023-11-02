@@ -1,5 +1,0 @@
-package accessModifiers
-
-fun main() {
-
-}
